@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/hashicorp/terraform/helper/hashcode"
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/soupdiver/terraform-provider-iptables/helper/hashcode"
 )
 
 func ruleHash(v interface{}) int {

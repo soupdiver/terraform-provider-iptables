@@ -3,8 +3,8 @@ package iptables
 import (
 	"os"
 
-	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 const (
@@ -64,9 +64,9 @@ func Provider() terraform.ResourceProvider {
 				Optional: true,
 			},
 			"vault_enable": {
-				Type:          schema.TypeBool,
-				Optional:      true,
-				Default:       false,
+				Type:     schema.TypeBool,
+				Optional: true,
+				// Default:       false,
 				ConflictsWith: []string{"login", "password"},
 			},
 			"vault_path": {

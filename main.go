@@ -1,9 +1,9 @@
 package main
 
 import (
-	"terraform-provider-iptables/iptables"
+	"github.com/soupdiver/terraform-provider-iptables/iptables"
 
-	"github.com/hashicorp/terraform/plugin"
+	"github.com/hashicorp/terraform-plugin-sdk/plugin"
 )
 
 func main() {
